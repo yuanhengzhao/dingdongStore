@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
-// import Portfolio from "./components/Portfolio";
+import AvailableKittens from "./components/AvailableKittens";
 import Contact from "./components/Contact";
 import AdoptionSteps from "./components/AdoptionSteps";
 // import ToTop from "./components/ToTop";
@@ -22,7 +22,7 @@ const App = () => {
       <Switch>
         <RouteWithContact exact path='/' Component={Home} />
         <RouteWithContact path='/faq' Component={About} />
-        <RouteWithContact path='/available_kittens' Component={()=><></>} />
+        <RouteWithContact path='/available_kittens' Component={AvailableKittens} />
         <Route path='/adoption_steps' component={AdoptionSteps} />
         {/* <ToTop /> */}
       </Switch>
