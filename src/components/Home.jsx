@@ -31,7 +31,7 @@ const Home = () => {
             <Button
               variant='outlined'
               className='btn btn-primary btn js-scroll'
-              href='/adoption_steps'
+              href='/dingdongStore/adoption_steps'
               size='large'
               style={{
                 color: "white",
