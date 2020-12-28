@@ -20,10 +20,10 @@ const App = () => {
     <Router>
       <Navbar />
       <Switch>
-        <RouteWithContact exact path='/' Component={Home} />
-        <RouteWithContact path='/faq' Component={About} />
-        <RouteWithContact path='/available_kittens' Component={AvailableKittens} />
-        <Route path='/adoption_steps' component={AdoptionSteps} />
+        <RouteWithContact exact path='/dingdongStore' Component={Home} />
+        <RouteWithContact path='/dingdongStore/faq' Component={About} />
+        <RouteWithContact path='/dingdongStore/available_kittens' Component={AvailableKittens} />
+        <Route path='/dingdongStore/adoption_steps' component={AdoptionSteps} />
         {/* <ToTop /> */}
       </Switch>
     </Router>
