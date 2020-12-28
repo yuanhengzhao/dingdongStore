@@ -1,8 +1,8 @@
-import React from "react";
-import BackToTop from "react-back-to-top";
+import React from 'react';
+import BackToTop from 'react-back-to-top';
 
 const ToTop = () => (
-  <BackToTop showOnScrollUp showAt={100} speed={1500} easing='easeInOutQuint'>
+  <BackToTop showOnScrollUp showAt={100} speed={1500} easing="easeInOutQuint">
     <span>scroll up</span>
   </BackToTop>
 );

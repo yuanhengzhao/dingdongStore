@@ -1,5 +1,6 @@
 import React from 'react';
-const AvailableKittens = () => {
+
+const ComingSoon = () => {
   return (
     <div id="home" className="intro route bg-image">
       <div className="intro-content display-table">
@@ -13,4 +14,4 @@ const AvailableKittens = () => {
   );
 };
 
-export default AvailableKittens;
+export default ComingSoon;

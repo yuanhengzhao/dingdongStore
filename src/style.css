@@ -122,7 +122,7 @@ a:hover {
 }
 
 .sect-mt4 {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 /* Title S */
@@ -168,7 +168,7 @@ a:hover {
 }
 
 .title-left:before {
-  content: "";
+  content: '';
   position: absolute;
   height: 3px;
   background-color: #0078ff;
@@ -186,7 +186,6 @@ a:hover {
   padding: 3rem 1.25rem;
   position: relative;
   background-color: #fff;
-  margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -351,7 +350,7 @@ a:hover {
 }
 
 #preloader:before {
-  content: "";
+  content: '';
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
@@ -419,7 +418,7 @@ NAVBAR
 
 .navbar-b.navbar-trans .nav-link:before,
 .navbar-b.navbar-reduce .nav-link:before {
-  content: "";
+  content: '';
   position: absolute;
   margin-left: 0px;
   width: 0%;
