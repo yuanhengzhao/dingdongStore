@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const tabList = [
-    { path: "/", title: "Home" },
-    { path: "/adoption_steps", title: "Adoption Steps" },
-    { path: "/faq", title: "FAQs" },
-    { path: "/available_kittens", title: "available Kittens" },
+    { path: "/dingdongStore/", title: "Home" },
+    { path: "/dingdongStore/adoption_steps", title: "Adoption Steps" },
+    { path: "/dingdongStore/faq", title: "FAQs" },
+    { path: "/dingdongStore/available_kittens", title: "available Kittens" },
   ];
   const location = useLocation();
   return (
