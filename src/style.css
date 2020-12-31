@@ -1,18 +1,13 @@
 /*
 GENERAL STYLING
 */
+html {
+  height: 100%;
+}
 body {
   background-color: #f5f5f5 !important;
   color: #4e4e4e !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #1e1e1e;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 a {
@@ -165,15 +160,7 @@ a:hover {
 .title-left {
   font-size: 2rem;
   position: relative;
-}
-
-.title-left:before {
-  content: '';
-  position: absolute;
-  height: 3px;
-  background-color: #0078ff;
-  width: 100px;
-  bottom: -12px;
+  color: black;
 }
 
 /* Box */
@@ -183,6 +170,7 @@ a:hover {
 }
 
 .box-shadow-full {
+  margin-top: 1.5rem;
   padding: 3rem 1.25rem;
   position: relative;
   background-color: #fff;
@@ -798,7 +786,7 @@ CONTACT
 }
 
 .contact-mf {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 /*
@@ -999,9 +987,36 @@ BUTTON
 }
 
 .route {
-  background-image: url(./img/AB.jpg);
+  background: linear-gradient(
+      0deg,
+      rgba(117, 117, 117, 0.5),
+      rgba(117, 117, 117, 0.5)
+    ),
+    url(./img/AB.jpg);
+  background-size: cover;
+  /* height: 100%; */
 }
 
 .timeline {
   overflow: hidden;
+}
+
+.row-content {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.flexBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.description {
+  /* display: flex;
+  flex-direction: column; */
+  width: 30%;
+}
+
+.board {
+  background-color: rgba(97, 97, 97, 0.5);
 }

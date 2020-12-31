@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const Navbar = () => {
   const tabList = [
     { path: '/', title: 'Home' },
-    { path: '/adoption_steps', title: 'Adoption Steps' },
+    // { path: '/adoption_steps', title: 'Adoption Steps' },
     { path: '/faq', title: 'FAQs' },
     { path: '/available_kittens', title: 'available Kittens' },
   ];
