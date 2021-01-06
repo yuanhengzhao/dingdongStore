@@ -11,28 +11,12 @@ const Navbar = () => {
   const location = useLocation();
   return (
     <nav
-      className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
+      className="navbar navbar-b navbar-trans flexBox fixed-top"
       id="mainNav"
     >
-      <div className="container">
-        <button
-          className="navbar-toggler collapsed"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarDefault"
-          aria-controls="navbarDefault"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div
-          className="navbar-collapse collapse justify-content-end"
-          id="navbarDefault"
-        >
-          <ul className="navbar-nav">
+      <div className="container justify-content-end">
+        <div className="justify-content-end">
+          <ul className="navbar-nav flexBox">
             {tabList.map((tab) => (
               <li className="nav-item" key={tab.title}>
                 <Link

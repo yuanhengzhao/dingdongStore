@@ -1,11 +1,14 @@
 import React from 'react';
 import { data } from '../data/FAQs';
 import Faq from 'react-faq-component';
+import Contact from './Contact';
+
 const FAQ = () => {
   const styles = {
     titleTextColor: 'black',
     rowTitleColor: 'black',
     rowContentColor: 'grey',
+    bgColor: 'none',
   };
 
   const config = {
@@ -20,10 +23,11 @@ const FAQ = () => {
         <div className="contact-mf">
           <div className="container">
             <div className="col-sm-12">
-              <div className="box-shadow-full">
+              <div className="half-white-board">
                 <h5 className="title-left">FAQs</h5>
                 <Faq data={data} styles={styles} config={config} />
               </div>
+              <Contact />
             </div>
           </div>
         </div>

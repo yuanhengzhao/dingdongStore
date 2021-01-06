@@ -1,10 +1,8 @@
 import React from 'react';
 import Typed from 'react-typed';
-import { Button } from '@material-ui/core';
-import IconButton from '@material-ui/core/IconButton';
-import YouTubeIcon from '@material-ui/icons/YouTube';
-import InstagramIcon from '@material-ui/icons/Instagram';
 import Box from '@material-ui/core/Box';
+import Contact from './Contact';
+
 const Home = () => {
   const description = [
     {
@@ -43,71 +41,22 @@ const Home = () => {
   return (
     <div id="home" className="intro route bg-image">
       <div className="intro-content display-table">
-        <div className="table-cell">
+        <div className="contact-mf">
           <div className="container">
             <div style={{ textAlign: 'left', width: '700px', margin: 'auto' }}>
               <h1 className="whiteColor">
-                Welcome to <b>Dingdong Paw Cattery</b>!
+                <p>Welcome to</p>
+                <b>Dingdong Paw Cattery</b>!
               </h1>
               <br />
             </div>
-            <Box justifyContent="center" width="400px" ml="40px">
+            <Box justifyContent="center" maxWidth="400px" width="80%" ml="40px">
               {description.map(({ title, content }, i) => (
                 <Board title={title} content={content} index={i} />
               ))}
             </Box>
             <br />
-            {/* <p className="intro-subtitle">
-              <span className="text-slider-items"></span>
-              <strong className="text-slider">
-                <Typed
-                  strings={[
-                    'British Shorthair',
-                    'CFA Cattery',
-                    'Golden and Silver Shaded',
-                  ]}
-                  typeSpeed={80}
-                  backDelay={1100}
-                  backSpeed={30}
-                  loop
-                />
-              </strong>
-            </p> */}
-            <p>
-              <IconButton
-                aria-label="youtube"
-                onClick={() =>
-                  window.open(
-                    'https://www.youtube.com/channel/UCib4UAvZU4ivJvJdeqxtCcw'
-                  )
-                }
-              >
-                <YouTubeIcon fontSize="large" style={{ color: 'white' }} />
-              </IconButton>
-              <IconButton
-                aria-label="instagram"
-                onClick={() =>
-                  window.open('https://www.instagram.com/dingdong_paw')
-                }
-              >
-                <InstagramIcon fontSize="large" style={{ color: 'white' }} />
-              </IconButton>
-            </p>
-            {/* <Button
-              variant="outlined"
-              className="btn btn-primary btn js-scroll"
-              href="/adoption_steps"
-              size="large"
-              style={{
-                color: 'white',
-                borderColor: 'white',
-                width: '400px',
-                height: '100px',
-                fontSize: 20,
-              }}
-            >
-              How to adopt our kitten
-            </Button> */}
+            <Contact />
           </div>
         </div>
       </div>
