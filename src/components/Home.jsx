@@ -1,5 +1,5 @@
 import React from 'react';
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 import Box from '@material-ui/core/Box';
 import Contact from './Contact';
 
@@ -50,7 +50,7 @@ const Home = () => {
               </h1>
               <br />
             </div>
-            <Box justifyContent="center" maxWidth="400px" width="80%" ml="40px">
+            <Box justifyContent="center" width="80%" ml="40px">
               {description.map(({ title, content }, i) => (
                 <Board title={title} content={content} index={i} />
               ))}

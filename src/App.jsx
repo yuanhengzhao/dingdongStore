@@ -4,19 +4,11 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import FAQ from './components/FAQ';
 import AvailableKittens from './components/AvailableKittens';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 import AdoptionSteps from './components/AdoptionSteps';
-import ComingSoon from './components/ComingSoon';
+// import ComingSoon from './components/ComingSoon';
 
 const App = () => {
-  const RouteWithContact = ({ exact = false, path, Component }) => {
-    return (
-      <Route exact={exact} path={path}>
-        <Component />
-        <Contact />
-      </Route>
-    );
-  };
   return (
     <Router>
       <Navbar />
