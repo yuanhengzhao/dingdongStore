@@ -2,14 +2,24 @@
 GENERAL STYLING
 */
 html {
-  min-height: 100%;
-  height: 100%;
 }
 body {
   background-color: #f5f5f5 !important;
   color: #4e4e4e !important;
+  background: linear-gradient(
+      0deg,
+      rgba(117, 117, 117, 0.5),
+      rgba(117, 117, 117, 0.5)
+    ),
+    url(./img/AB.jpg);
+  /* -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   /* position: fixed; */
-  min-width: 100%;
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
@@ -547,19 +557,6 @@ BUTTON
   margin-top: 6rem;
 }
 .route {
-  background: linear-gradient(
-      0deg,
-      rgba(117, 117, 117, 0.5),
-      rgba(117, 117, 117, 0.5)
-    ),
-    url(./img/AB.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
   /* height: 100%; */
 }
 
@@ -603,4 +600,12 @@ BUTTON
 
 .default-icon-color {
   color: 'white';
+}
+.faq-body .home-box {
+  overflow-y: scroll;
+  max-height: 60vh;
+}
+
+.hidden-el {
+  visibility: hidden;
 }

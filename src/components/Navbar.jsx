@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 const Navbar = () => {
@@ -8,11 +8,20 @@ const Navbar = () => {
     { path: '/faq', title: 'FAQs' },
     { path: '/available_kittens', title: 'available Kittens' },
   ];
+  const [isHidden, SetHidden] = useState(false);
   const location = useLocation();
   return (
     <nav
-      className="navbar navbar-b navbar-trans flexBox fixed-top"
+      className={`navbar navbar-b navbar-trans flexBox fixed-top ${
+        isHidden ? 'hidden-el' : ''
+      }`}
       id="mainNav"
+      onScroll={(e) => {
+        let element = e.target;
+        console.log('scroll', element.scrollHeight - element.scrollTop);
+        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+        }
+      }}
     >
       <div className="container justify-content-end">
         <div className="justify-content-end">

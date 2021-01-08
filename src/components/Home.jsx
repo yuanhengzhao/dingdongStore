@@ -32,7 +32,7 @@ const Home = () => {
   ];
   const Board = ({ title, content }) => {
     return (
-      <Box m={2} p={2} width="400px" className="board" my="20px">
+      <Box m={2} p={2} maxWidth="400px" className="board" my="20px">
         <h3>{title}</h3>
         <h5>{content}</h5>
       </Box>
@@ -43,20 +43,29 @@ const Home = () => {
       <div className="intro-content display-table">
         <div className="contact-mf">
           <div className="container">
-            <div style={{ textAlign: 'left', width: '700px', margin: 'auto' }}>
+            <div
+              style={{
+                textAlign: 'left',
+                width: '70vw',
+                maxWidth: '700px',
+                margin: 'auto',
+              }}
+            >
               <h1 className="whiteColor">
                 <p>Welcome to</p>
                 <b>Dingdong Paw Cattery</b>!
               </h1>
               <br />
             </div>
-            <Box justifyContent="center" width="80%" ml="40px">
-              {description.map(({ title, content }, i) => (
-                <Board title={title} content={content} index={i} />
-              ))}
-            </Box>
-            <br />
-            <Contact />
+            <div className="home-box">
+              <Box justifyContent="center" width="80%" ml="40px">
+                {description.map(({ title, content }, i) => (
+                  <Board title={title} content={content} index={i} />
+                ))}
+              </Box>
+              <br />
+              <Contact />
+            </div>
           </div>
         </div>
       </div>
