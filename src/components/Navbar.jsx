@@ -4,11 +4,10 @@ import { useLocation } from 'react-router-dom';
 const Navbar = () => {
   const tabList = [
     { path: '/', title: 'Home' },
-    // { path: '/adoption_steps', title: 'Adoption Steps' },
     { path: '/faq', title: 'FAQs' },
-    { path: '/available_kittens', title: 'available Kittens' },
+    { path: '/available', title: 'available' },
   ];
-  const [isHidden, SetHidden] = useState(false);
+  const [isHidden] = useState(false);
   const location = useLocation();
   return (
     <nav

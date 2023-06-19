@@ -585,10 +585,13 @@ BUTTON
   background-color: rgba(97, 97, 97, 0.5);
 }
 
-.center {
-  text-align: center;
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-
 .half-white-board {
   margin-top: 1.5rem;
   padding: 3rem 1.25rem;
@@ -608,4 +611,26 @@ BUTTON
 
 .hidden-el {
   visibility: hidden;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: 70px; */
+  height: 80vh;
+}
+
+.product-row {
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.product-list img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.endy {
+  text-align: center;
 }
